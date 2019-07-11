@@ -1,0 +1,3 @@
+#+OPTIONS: toc:nil num:nil html-postamble:nil
+
+[[./quitting.org][Quitting My Job]]
