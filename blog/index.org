@@ -1,6 +1,15 @@
 #+OPTIONS: toc:nil num:nil html-postamble:nil
 
-[[./quitting.org][Quitting My Job]]
+* [[./quitting.org][Quitting My Job]]
+:PROPERTIES:
+:RSS_PERMALINK: quitting.html
+:ID:       be609218-c498-4091-9330-d8a94466315d
+:PUBDATE:  <2019-06-24 Tue>
+:END:
 
-[[file:free.org][Trying to Live a Life that's Completely Free]]
-
+* [[./free.org][Trying to Live a Life that's Completely Free]]
+:PROPERTIES:
+:RSS_PERMALINK: free.html
+:ID:       d2e14a46-2479-4df3-83b6-b30c8604547d
+:PUBDATE:  <2019-07-27 Sat>
+:END:
