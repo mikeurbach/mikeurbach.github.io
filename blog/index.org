@@ -13,3 +13,9 @@
 :ID:       d2e14a46-2479-4df3-83b6-b30c8604547d
 :PUBDATE:  <2019-07-27 Sat>
 :END:
+* [[./rockies.org][Exploring the Central Rockies]]
+:PROPERTIES:
+:RSS_PERMALINK: rockies.html
+:PUBDATE:  <2019-09-22 Sun>
+:ID:       6e7a60d0-b219-41a5-a13e-36037873faed
+:END:

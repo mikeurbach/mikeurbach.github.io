@@ -14,12 +14,12 @@
   <link>https://mikeurbach.github.io/blog/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Tue, 27 Aug 2019 15:58:38 -0600</pubDate>
-  <lastBuildDate>Tue, 27 Aug 2019 15:58:38 -0600</lastBuildDate>
+  <pubDate>Tue, 24 Sep 2019 00:28:18 -0600</pubDate>
+  <lastBuildDate>Tue, 24 Sep 2019 00:28:18 -0600</lastBuildDate>
   <generator>Emacs 26.2 Org-mode 9.1.9</generator>
   <webMaster>mikeurbach@system76-pc (Mike Urbach)</webMaster>
   <image>
-    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <url>https://mikeurbach.github.io/img/profile.jpg</url>
     <title></title>
     <link>https://mikeurbach.github.io/blog/</link>
   </image>
@@ -41,6 +41,15 @@
     <author>mikeurbach@system76-pc (Mike Urbach)</author>
     <guid isPermaLink="false">https://mikeurbach.github.io/blog/free.html</guid>
     <pubDate>Sat, 27 Jul 2019 00:00:00 -0600</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Exploring the Central Rockies</title>
+    <link>https://mikeurbach.github.io/blog/rockies.html</link>
+    <author>mikeurbach@system76-pc (Mike Urbach)</author>
+    <guid isPermaLink="false">https://mikeurbach.github.io/blog/rockies.html</guid>
+    <pubDate>Sun, 22 Sep 2019 00:00:00 -0600</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
