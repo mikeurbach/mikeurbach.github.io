@@ -5,9 +5,9 @@ body {
 
 div.tooltip {	
     position: absolute;
-    width: 100px;
+    width: 200px;
     padding: 2px;
-    font: 12px sans-serif;
+    font: 24px sans-serif;
     background: white;
     border-radius: 3px;
     pointer-events: none;

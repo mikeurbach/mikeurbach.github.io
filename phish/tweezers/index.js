@@ -22,7 +22,7 @@ function showNodeToolTip(d) {
 	.html(tooltipHtml(d))
 	.style("text-align", "right")
 	.style("height", "100px")
-        .style("left", d3.event.pageX - 140 + "px")
+        .style("left", d3.event.pageX - 240 + "px")
         .style("top", d3.event.pageY - 15 + "px");
     tooltip
 	.transition()
@@ -165,6 +165,5 @@ var labels = svg
     .attr("x", 0)
     .attr("y", function(d) { return years[d] + 50})
     .style("text-anchor", "end")
-    .style("font-size", "144")
-    .style("font-family", "sans-serif")
+    .style("font", "144px sans-serif")
     .text(function(d) { return d; });
