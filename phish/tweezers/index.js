@@ -8,7 +8,7 @@ function showLinkTooltip(d) {
     tooltip
 	.html(tooltipHtml(nodesById[d.source]) + "<hr/>" + tooltipHtml(nodesById[d.target]))
 	.style("text-align", "left")
-	.style("height", "200px")
+	.style("height", "400px")
         .style("left", d3.event.pageX + 20 + "px")
         .style("top", d3.event.pageY - 15 + "px");
     tooltip
@@ -21,7 +21,7 @@ function showNodeToolTip(d) {
     tooltip
 	.html(tooltipHtml(d))
 	.style("text-align", "right")
-	.style("height", "100px")
+	.style("height", "200px")
         .style("left", d3.event.pageX - 240 + "px")
         .style("top", d3.event.pageY - 15 + "px");
     tooltip
