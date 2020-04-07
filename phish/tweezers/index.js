@@ -1,14 +1,17 @@
 function tooltipHtml(node) {
     return "<p>" + node.name + "</p>" +
+	"<p>" + node.set + ", Song " + node.set_placement + "</p>" +
 	"<p>" + node.date + "</p>" +
-	"<p>" + node.venue + "</p>";
+	"<p>" + node.venue + "</p>" +
+	"<p><a href=\"" + node.link + "\" target=\"_blank\">Go to phish.net</a></p>";
 }
 
 function showLinkTooltip(d) {
     tooltip
 	.html(tooltipHtml(nodesById[d.source]) + "<hr/>" + tooltipHtml(nodesById[d.target]))
+	.style("display", "block")
 	.style("text-align", "left")
-	.style("height", "400px")
+	.style("height", "700px")
         .style("left", d3.event.pageX + 20 + "px")
         .style("top", d3.event.pageY - 15 + "px");
     tooltip
@@ -20,9 +23,10 @@ function showLinkTooltip(d) {
 function showNodeToolTip(d) {
     tooltip
 	.html(tooltipHtml(d))
+	.style("display", "block")
 	.style("text-align", "right")
-	.style("height", "200px")
-        .style("left", d3.event.pageX - 240 + "px")
+	.style("height", "350px")
+        .style("left", d3.event.pageX - 260 + "px")
         .style("top", d3.event.pageY - 15 + "px");
     tooltip
 	.transition()
@@ -30,11 +34,41 @@ function showNodeToolTip(d) {
         .style("opacity", 1);
 }
 
+function showToolTipNodeClose() {
+    tooltip
+	.append("div")
+	.html("&times;")
+	.style("position", "absolute")
+	.style("top", "0px")
+	.style("right", "5px")
+	.style("cursor", "pointer")
+	.on("click", function(d) {
+	    hideToolTip();
+	    activeNode = null;
+	});
+}
+
+function showToolTipLinkClose() {
+    tooltip
+	.append("div")
+	.html("&times;")
+	.style("position", "absolute")
+	.style("top", "0px")
+	.style("right", "5px")
+	.style("cursor", "pointer")
+	.on("click", function(d) {
+	    hideToolTip();
+	    activeLink = null;
+	});
+}
+
 function hideToolTip() {
     tooltip
 	.transition()
         .duration(200)
         .style("opacity", 0);
+    tooltip
+	.style("display", "none");
 }
 
 var timeParse = d3.timeParse("%Y-%m-%d");
@@ -117,6 +151,7 @@ var links = svg
 	} else {
 	    activeLink = d.source;
 	    showLinkTooltip(d);
+	    showToolTipLinkClose();
 	}
     })
     .on("mouseover", function(d) {
@@ -146,6 +181,7 @@ var nodes = svg
 	} else {
 	    activeNode = d.id;
 	    showNodeToolTip(d);
+	    showToolTipNodeClose();
 	}
     })
     .on("mouseover", function(d) {

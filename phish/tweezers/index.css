@@ -10,5 +10,5 @@ div.tooltip {
     font: 24px sans-serif;
     background: white;
     border-radius: 3px;
-    pointer-events: none;
+    padding-right: 30px;
 }
