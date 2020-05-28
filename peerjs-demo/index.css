@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+input#remote-id {
+    height: 50px;
+    width: 625px;
+    font-size: 1em;
+}
+
+div#video-container {
+    position: relative;
+}
+
+div#video-container video {
+    width: 800px;
+    height: 600px;
+}
+
+div#video-container video#local-video {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    left: 695px;
+}

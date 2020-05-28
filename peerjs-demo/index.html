@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  </head>
+  <body>
+    <h1>Your ID is
+      <span id="peer-id">loading...</span>
+    </h1>
+    <h1>Call someone:
+      <input id="remote-id" type="text" placeholder="someone's ID"/>
+      <button onclick="call()">connect</button>
+    </h1>
+    <div id="video-container">
+      <video id="local-video"></video>
+      <video id="remote-video"></video>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
