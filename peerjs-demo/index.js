@@ -1,9 +1,9 @@
 var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
 var peer = new Peer(null, {
-    host: 'ec2-52-14-65-218.us-east-2.compute.amazonaws.com',
-    port: 9000,
-    secure: true,
+    // host: 'ec2-52-14-65-218.us-east-2.compute.amazonaws.com',
+    // port: 9000,
+    // secure: false,
     debug: 3
 });
 
