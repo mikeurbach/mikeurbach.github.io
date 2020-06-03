@@ -12,7 +12,7 @@ peer.on('open', function(id) {
 });
 
 peer.on('call', function(call) {
-    getUserMedia({video: true, audio: false}, function(stream) {
+    getUserMedia({video: true, audio: true}, function(stream) {
 	call.answer(stream); // Answer the call with an A/V stream.
 	call.on('stream', function(remoteStream) {
 	    // Show stream in some video/canvas element.
@@ -32,7 +32,7 @@ peer.on('error', function(err) {
 function call() {
     var peerId = document.querySelector('#remote-id').value;
 
-    getUserMedia({video: true, audio: false}, function(stream) {
+    getUserMedia({video: true, audio: true}, function(stream) {
 	var call = peer.call(peerId, stream);
 	call.on('stream', function(remoteStream) {
 	    // Show stream in some video/canvas element.
